@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EDUERA - Team Login</title>
+    <title>EDUERA- Team Login</title>
     
     <!-- Firebase Authentication -->
     <script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js"></script>
@@ -24,7 +24,7 @@
     
         <div class="login-container">
             <h2>Welcome to EDUERA</h2>
-            <p>Login or Sign up using your EDUERA Google Account</p>
+            <p>Login using your EDUERA Google Account</p>
     
             <!-- Google Sign-In Button -->
             <div id="g_id_onload"
@@ -32,17 +32,12 @@
                 data-callback="handleCredentialResponse">
             </div>
             <div class="g_id_signin" data-type="standard"></div>
-
-            <!-- Buttons for Login and Signup -->
-            <button id="loginBtn">Login with Google</button>
-            <button id="signupBtn">Sign up with Google</button>
-            
             <a href="index.html" class="back-home">Back to Home</a>
-            <a href="main.html" class="mainpage">Continue</a>
+            <a href="main.html"  class="mainpage">Continue</a>
         </div>
     </div>
 
     <!-- External JavaScript -->
-    <script src="login.js" type="module"></script>
+    <script type="module" src="login.js"></script>
 </body>
 </html>
