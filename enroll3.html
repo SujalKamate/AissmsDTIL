@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razorpay Payment Interface Mock-up</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="enroll3.css">
+</head>
+<body>
+    <div class="payment-container">
+        <div class="payment-header">
+            <h2>Payment Interface</h2>
+        </div>
+        <ul class="payment-methods">
+            <li>
+                <input type="radio" id="credit-debit-card" name="payment-method" value="credit-debit-card">
+                <label for="credit-debit-card"><i class="fas fa-credit-card"></i> Credit/Debit Card</label>
+            </li>
+            <li>
+                <input type="radio" id="net-banking" name="payment-method" value="net-banking">
+                <label for="net-banking"><i class="fas fa-wallet"></i> Net Banking</label>
+            </li>
+            <li>
+                <input type="radio" id="upi" name="payment-method" value="upi">
+                <label for="upi"><i class="fas fa-rupee-sign"></i> UPI</label>
+            </li>
+            <li>
+                <input type="radio" id="wallets" name="payment-method" value="wallets">
+                <label for="wallets"><i class="fas fa-money-bill-alt"></i> Wallets (e.g., OlaMoney, FreeCharge)</label>
+            </li>
+        </ul>
+        <button class="btn btn-primary btn-block">Pay Now</button>
+        <div class="proceed-buttons">
+            <button> <a href="main.html" class="login">Proceed</a></button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

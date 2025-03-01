@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eduera Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="header-content">
+      <div class="globe-icon" onclick="openCountryDropdown()">🌍</div>
+      <div class="language-logo" onclick="openLanguageDropdown()">🌐</div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="edueralogo.jpg.jpeg" alt="Eduera Logo" class="hero-logo">
+  </section>
+
+  <!-- Content Section -->
+
+   
+  
+  <!-- Footer Section -->
+  <footer>
+    <a href="index2.html" class="get-started">GET STARTED</a>
+  </footer>
+
+  <!-- Country Dropdown Modal -->
+  <div id="countryModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeCountryDropdown()">&times;</span>
+      <h2>Select Country Code</h2>
+      <select>
+        <option value="+91">India (+91)</option>
+        <option value="+1">USA (+1)</option>
+        <option value="+44">UK (+44)</option>
+        <!-- Add more options as needed -->
+      </select>
+    </div>
+  </div>
+
+  <!-- Language Dropdown Modal -->
+  <div id="languageModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeLanguageDropdown()">&times;</span>
+      <h2>Select Language</h2>
+      <select onchange="changeLanguage(this.value)">
+        <option value="en">English</option>
+        <option value="es">Spanish</option>
+        <option value="fr">French</option>
+        <!-- Add more options as needed -->
+      </select>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

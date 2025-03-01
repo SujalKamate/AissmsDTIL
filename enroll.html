@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Information Form</title>
+    <link rel="stylesheet" href="enroll.css">
+    
+</head>
+<body>
+    <div class="form-container">
+        <h2>Authentication</h2>
+        <form onsubmit="return validateForm()">
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" required>
+            
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <div class="submit-buttons">
+                <button> <a href="enroll1.html" class="login">Submit</a></button>
+            </div>
+        </form>
+    </div>
+    <script src="enroll.js"></script>
+</body>
+</html>

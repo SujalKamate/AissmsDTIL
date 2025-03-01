@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDUERA - Team Login</title>
+    
+    <!-- Firebase Authentication -->
+    <script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js"></script>
+
+    <!-- Google Identity Services -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="branding">
+            <h1>EDUERA</h1>
+            <p>Join the educational platform and explore endless possibilities.</p>
+        </div>
+    
+        <div class="login-container">
+            <h2>Welcome to EDUERA</h2>
+            <p>Login or Sign up using your EDUERA Google Account</p>
+    
+            <!-- Google Sign-In Button -->
+            <div id="g_id_onload"
+                data-client_id="424674461682-r16io806pfmeq1jon933ghl25e7cplm6.apps.googleusercontent.com"
+                data-callback="handleCredentialResponse">
+            </div>
+            <div class="g_id_signin" data-type="standard"></div>
+
+            <!-- Buttons for Login and Signup -->
+            <button id="loginBtn">Login with Google</button>
+            <button id="signupBtn">Sign up with Google</button>
+            
+            <a href="index.html" class="back-home">Back to Home</a>
+            <a href="main.html" class="mainpage">Continue</a>
+        </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="login.js" type="module"></script>
+</body>
+</html>

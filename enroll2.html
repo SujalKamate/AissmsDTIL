@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Netbanking Payment</title>
+    <link rel="stylesheet" href="enroll2.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Netbanking Payment</h2>
+        <form onsubmit="return validateForm()">
+            <label for="bankname">Bank Name:</label>
+            <input type="text" id="bankname" name="bankname" required>
+            
+            <label for="accountnumber">Account Number:</label>
+            <input type="text" id="accountnumber" name="accountnumber" required>
+            
+            <label for="ifsc">IFSC Code:</label>
+            <input type="text" id="ifsc" name="ifsc" required>
+            
+            <input type="submit" value="Pay Now">
+            <div class="proceed-buttons">
+                <button> <a href="main.html" class="login">Proceed</a></button>
+            </div>
+
+        </form>
+    </div>
+    <script src="enroll2.js"></script>
+</body>
+</html>

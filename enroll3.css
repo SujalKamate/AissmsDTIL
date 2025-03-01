@@ -1,0 +1,27 @@
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .payment-container {
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #070240;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+        .payment-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .payment-methods {
+            list-style-type: none;
+            padding: 0;
+        }
+        .payment-methods li {
+            margin-bottom: 10px;
+        }
+    

@@ -1,0 +1,98 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #3A225D, #000000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #96356f;
+}
+
+/* Login Page Container */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 900px;
+    background: #227269;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 15px rgba(145, 62, 62, 0.3);
+}
+
+/* Left Side - Branding */
+.branding {
+    flex: 1;
+    text-align: center;
+    padding-right: 30px;
+}
+
+.branding h1 {
+    color: #932e2e;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.branding p {
+    color: #b87630;
+    font-size: 18px;
+}
+
+/* Right Side - Login Form */
+.login-container {
+    flex: 1;
+    text-align: center;
+    background: #79932a;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.login-container h2 {
+    color: #3A225D;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Google Sign-In Button */
+#g_id_onload {
+    display: flex;
+    justify-content: center;
+}
+
+.g_id_signin {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100%;
+}
+
+/* Back to Home Link */
+.back-home {
+    display: block;
+    margin-top: 15px;
+    color: #3A225D;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.back-home:hover {
+    color: #2A1840;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+        text-align: center;
+    }
+
+    .branding {
+        padding-bottom: 20px;
+    }
+}
